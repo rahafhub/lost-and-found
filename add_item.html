@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة عنصر مفقود - Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إضافة عنصر مفقود</h1>
+        <form action="add_item_process.php" method="post" enctype="multipart/form-data">
+            <label for="item_name">اسم العنصر</label>
+            <input type="text" id="item_name" name="item_name" required placeholder="أدخل اسم العنصر">
+            
+            <label for="item_description">وصف العنصر</label>
+            <textarea id="item_description" name="item_description" required placeholder="أدخل وصف العنصر"></textarea>
+
+            <label for="item_location">الموقع</label>
+            <input type="text" id="item_location" name="item_location" required placeholder="أدخل موقع العنصر">
+            
+            <label for="item_image">صورة العنصر</label>
+            <input type="file" id="item_image" name="item_image" accept="image/*" required>
+            
+            <button type="submit">إضافة العنصر</button>
+        </form>
+    </div>
+</body>
+</html>
